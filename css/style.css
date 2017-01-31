@@ -55,9 +55,9 @@ table {
 
 
 body {
-background-color: #004f94;
-background-image: url("https://www.transparenttextures.com/patterns/purty-wood.png");
-/* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+background-color: #5887d3;
+
+
 width: 100%;
 }
 
@@ -69,29 +69,33 @@ width: 100%;
 
 nav {
     position: fixed;
+    display: flex;
+    justify-content: center;
     top:0;
     left: 0;
     overflow: hidden;
      width: 100%;
      height: 4.6em;
     background-color: #0068b8;
-    background-image: url("https://www.transparenttextures.com/patterns/ravenna.png");
-    /* This is mostly intended for prototyping; please download the pattern and re-host for production environments. Thank you! */
+
     margin-top: 0;
 }
 
 
 nav ul {
+    display: flex;
+    justify-content: flex-end;
     list-style-type: none;
-    margin: 0 auto;
     width: 50em;
     padding: 0;
+    margin:0 auto;
 }
 
 
 
 nav ul li {
-    float: left;
+ margin:0;
+ padding:0;
 
 }
 
@@ -156,7 +160,7 @@ h1, h2 {
 }
 
 h1 {
-    font-size: 7.7em;
+    font-size: 6.125em;
 }
 
 h2 {
@@ -176,7 +180,7 @@ h2 {
 }
 
 #mainImage img {
-   width: 60%;
+   width: 70%;
    margin: 0 auto;
    border-radius: 1em;
 
@@ -193,5 +197,150 @@ footer {
     font-size: small;
     font-variant: small-caps;
 
+
+}
+
+
+
+@media (max-width:360px) and (orientation:portrait)  {
+
+#mainImage img {
+   width: 95%;
+   margin: 0 auto;
+   border-radius: 1em;
+
+}
+
+
+h1 {
+    font-size: 4.125em;
+}
+
+
+h2 {
+    font-size: 2.125em;
+}
+
+
+
+
+
+nav {
+
+     width: 100%;
+     height: 3.6em;
+    background-color: #0068b8;
+
+    margin-top: 0;
+}
+
+
+nav ul {
+    display: flex;
+    flex:1;
+    list-style-type: none;
+    justify-content: space-between;
+}
+
+nav ul li {
+    display: flex;
+    align-items: stretch;
+}
+
+
+
+nav  ul li > a {
+    font-size: .5em;
+    display: block;
+    line-height: 10px;
+    width:5.5em;
+    padding: .7em;
+    border: 1px solid white;
+    border-radius: .5em;
+    margin-top: 1em ;
+    margin-left: .1em;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-variant: small-caps;
+}
+
+
+}
+
+@media (min-width:361px) and (max-width:600px) and (orientation:portrait)   {
+
+#mainImage img {
+   width: 95%;
+   margin: 0 auto;
+   border-radius: 1em;
+
+}
+
+
+h1 {
+    font-size: 4.125em;
+}
+
+
+h2 {
+    font-size: 2.125em;
+}
+
+
+
+
+
+nav {
+
+     width: 100%;
+     height: 3.6em;
+    background-color: #0068b8;
+
+    margin-top: 0;
+}
+
+
+nav ul {
+    display: flex;
+    flex:1;
+    flex-basis: 10%;
+    list-style-type: none;
+    justify-content: center;
+}
+
+nav ul li {
+    display: flex;
+    align-items: stretch;
+}
+
+
+
+nav  ul li > a {
+    font-size: .5em;
+    display: block;
+    line-height: 10px;
+    width:5.5em;
+    padding: .7em;
+    border: 1px solid white;
+    border-radius: .5em;
+    margin-top: 1em ;
+    margin-left: .1em;
+    text-decoration: none;
+    background-color: white;
+    color: black;
+    font-variant: small-caps;
+}
+
+}
+
+@media (min-width:601px) and (max-width:1024px) and (orientation:portrait)  {
+
+#mainImage img {
+   width: 90%;
+   margin: 0 auto;
+   border-radius: 1em;
+
+}
 
 }
